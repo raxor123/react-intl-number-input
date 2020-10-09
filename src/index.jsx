@@ -19,6 +19,10 @@ class IntlNumberInput extends Component {
     if (prevProps.value !== this.props.value) {
       this.setMaskedValue(this.props.value);
     }
+    
+    if (prevProps.locale !== this.props.locale) {
+      this.setMaskedValue(this.props.value);
+    }
   }
 
   setMaskedValue(value = 0) {
